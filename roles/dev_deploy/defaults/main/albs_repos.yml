@@ -1,5 +1,5 @@
 albs_repos:
-  albs-frontend: https://github.com/AlmaLinux/albs-frontend.git
+  albs-frontend: https://github.com/oreonproject/albs-frontend-oreon.git
   albs-node: https://github.com/AlmaLinux/albs-node.git
   albs-web-server: https://github.com/AlmaLinux/albs-web-server.git
   albs-sign-node: https://github.com/AlmaLinux/albs-sign-node.git
