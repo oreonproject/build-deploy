@@ -10,8 +10,8 @@ You can deploy build system in a really fast way. Let's get started.
 ### Steps
 * Create deployment scripts local copy.
   ```sh
-  git clone git@github.com:AlmaLinux/albs-deploy.git
-  cd albs-deploy
+  git clone https://github.com/oreonproject/build-deploy.git
+  cd build-deploy
   ```
 * Create `vars.yml` in repository root with the following content.
   ```yml
@@ -88,9 +88,9 @@ Several tokens you can get on separate resources.
 
 ### Immudb Tokens
 
-1. Username: Use the default username (`immudb`) or create your own user via [immudb-wrapper](https://github.com/AlmaLinux/immudb-wrapper) or [immuadmin](https://docs.immudb.io/master/connecting/clitools.html#immuadmin) tool
+1. Username: Use the default username (`immudb`)
 2. Password: Use the default password (`immudb`) for the `immudb` user or use the password from your created user.
-3. Database: Use the default database (`defaultdb`) or create your own database via [immudb-wrapper](https://github.com/AlmaLinux/immudb-wrapper) or [immuadmin]
+3. Database: Use the default database (`defaultdb`)
 
 ### JWT Tokens
 They are generated automatically, but if you want to make them static, it makes sense to generate them manually.
@@ -112,7 +112,7 @@ This token has the following payload:
 For this token type payload is different:
 ```json
 {
-   "email":"base_user@almalinux.org"
+   "email":"base_user@oreonproject.org"
 }
 ```
 
@@ -158,11 +158,3 @@ rabbitmq_vhost:
 
 pulp_password:
 ```
-
-## Contributing to albs-deploy
-Any question? Found a bug? File an [issue](https://github.com/AlmaLinux/build-system/issues).
-Do you want to contribute with source code?
-1. Fork the repository on GitHub
-2. Create a new feature branch
-3. Write your change
-4. Submit a pull request
