@@ -42,7 +42,8 @@ if [[ $EUID -eq 0 ]]; then
 fi
 
 # Check if user has sudo access
-if ! sudo -n true 2>/dev/null; then
+log_info "Checking sudo access (you may be prompted for your password)..."
+if ! sudo -v; then
     log_error "This script requires sudo privileges. Please ensure your user can run sudo commands."
     exit 1
 fi
